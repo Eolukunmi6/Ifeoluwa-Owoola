@@ -121,7 +121,7 @@ export function Login() {
           <button 
             type="submit" 
             disabled={loading}
-            className="w-full bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white py-3.5 rounded-xl font-bold hover:opacity-90 transition-all shadow-[0_4px_14px_0_rgba(14,165,233,0.39)] disabled:opacity-70 disabled:cursor-not-allowed"
+            className="w-full bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 py-3.5 rounded-xl font-black tracking-wide hover:opacity-90 transition-all shadow-[0_4px_14px_0_rgba(251,191,36,0.39)] disabled:opacity-70 disabled:cursor-not-allowed"
           >
             {loading ? 'Signing In...' : 'Sign In'}
           </button>

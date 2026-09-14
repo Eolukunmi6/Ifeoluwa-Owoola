@@ -59,7 +59,7 @@ export function Navbar() {
                 </Link>
                 <Link
                   to="/login"
-                  className="text-slate-900 font-semibold text-[14px] px-3 py-2.5 hover:text-sky-600 transition-colors"
+                  className="bg-amber-400 text-slate-900 font-bold text-[14px] px-5 py-2.5 rounded-xl hover:bg-amber-500 transition-colors shadow-sm"
                 >
                   Login
                 </Link>
@@ -126,7 +126,7 @@ export function Navbar() {
                   <Link to="/tutor/register" className="bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white font-bold py-3 px-4 rounded-xl text-center mt-2 shadow-sm">
                     Register as Tutor
                   </Link>
-                  <Link to="/login" className="text-slate-900 font-bold py-2 px-3 hover:bg-slate-50 rounded-lg">
+                  <Link to="/login" className="bg-amber-400 text-slate-900 font-bold py-3 px-4 rounded-xl text-center shadow-sm hover:bg-amber-500">
                     Login
                   </Link>
                   <Link to="/register" className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold py-3 px-4 rounded-xl text-center mt-2 shadow-sm">
