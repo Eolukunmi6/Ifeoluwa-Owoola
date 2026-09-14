@@ -17,10 +17,10 @@ export function Navbar() {
   return (
     <nav className="border-b border-slate-200/50 bg-white/80 backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="flex justify-between items-center min-h-[88px] py-2">
+        <div className="flex justify-between items-center min-h-[72px] py-2">
           <div className="flex items-center gap-2">
             <Link to="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
-              <img src="/logo.png" alt="Auralearn Logo" className="h-20 sm:h-24 w-auto object-contain mix-blend-multiply scale-[1.35] sm:scale-150 origin-left" />
+              <img src="/logo.png" alt="Auralearn Logo" className="h-12 sm:h-16 w-auto object-contain mix-blend-multiply scale-110 sm:scale-125 origin-left" />
             </Link>
           </div>
 
