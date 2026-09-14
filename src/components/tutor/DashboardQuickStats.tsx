@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../../providers/AuthProvider';
-import { Wallet, CalendarClock, TrendingUp } from 'lucide-react';
+import { Wallet, TrendingUp } from 'lucide-react';
+import { supabase } from '../../lib/supabase';
 
 export function DashboardQuickStats() {
-  const { session } = useAuth();
+  const { session, profile } = useAuth();
   const [loading, setLoading] = useState(true);
   const [netThisMonth, setNetThisMonth] = useState<number>(0);
   const [currency, setCurrency] = useState<string>('USD');
@@ -12,28 +13,40 @@ export function DashboardQuickStats() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        if (!session?.access_token) return;
+        if (!session?.access_token || !profile?.id) return;
+        
+        // 1. Fetch preferred tutor currency
+        const { data: tutor } = await supabase
+          .from('tutors')
+          .select('currency')
+          .eq('profile_id', profile.id)
+          .single();
+          
+        const preferredCurrency = tutor?.currency || 'USD';
+        setCurrency(preferredCurrency);
+
+        // 2. Fetch Earnings
         const response = await fetch('/api/tutor/earnings', {
           headers: {
             'Authorization': `Bearer ${session.access_token}`
           }
         });
         const data = await response.json();
+
         if (response.ok && data.payments) {
           const now = new Date();
           let monthTotal = 0;
-          let latestCurrency = 'USD';
           
           data.payments.forEach((tx: any) => {
-            const txDate = new Date(tx.created_at);
-            if (txDate.getMonth() === now.getMonth() && txDate.getFullYear() === now.getFullYear()) {
-              monthTotal += tx.tutor_amount;
-              latestCurrency = tx.currency; // Assume mostly 1 currency
+            if (tx.currency === preferredCurrency) {
+              const txDate = new Date(tx.created_at);
+              if (txDate.getMonth() === now.getMonth() && txDate.getFullYear() === now.getFullYear()) {
+                monthTotal += Number(tx.tutor_amount);
+              }
             }
           });
           
           setNetThisMonth(monthTotal);
-          setCurrency(latestCurrency);
           setBookingCount(data.payments.length); // Total bookings paid
         }
       } catch (err) {
@@ -43,7 +56,7 @@ export function DashboardQuickStats() {
       }
     };
     fetchStats();
-  }, [session]);
+  }, [session, profile]);
 
   if (loading) return null;
 

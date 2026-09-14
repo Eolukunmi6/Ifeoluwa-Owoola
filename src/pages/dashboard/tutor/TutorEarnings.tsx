@@ -5,19 +5,31 @@ import { TransactionHistory, PaymentTransaction } from '../../../components/tuto
 import { TutorWallet } from '../../../components/tutor/TutorWallet';
 import { BankDetailsForm } from '../../../components/tutor/BankDetailsForm';
 import { WithdrawalHistory } from '../../../components/tutor/WithdrawalHistory';
+import { supabase } from '../../../lib/supabase';
 
 export function TutorEarnings() {
-  const { session } = useAuth();
+  const { session, profile } = useAuth();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [transactions, setTransactions] = useState<PaymentTransaction[]>([]);
   const [refreshTrigger, setRefreshTrigger] = useState(0);
+  const [tutorCurrency, setTutorCurrency] = useState<string>('USD');
 
   useEffect(() => {
     const fetchEarnings = async () => {
       try {
-        if (!session?.access_token) return;
+        if (!session?.access_token || !profile?.id) return;
         
+        const { data: tutor } = await supabase
+          .from('tutors')
+          .select('currency')
+          .eq('profile_id', profile.id)
+          .single();
+          
+        if (tutor) {
+          setTutorCurrency(tutor.currency || 'USD');
+        }
+
         const response = await fetch('/api/tutor/earnings', {
           headers: {
             'Authorization': `Bearer ${session.access_token}`
@@ -37,7 +49,7 @@ export function TutorEarnings() {
     };
     
     fetchEarnings();
-  }, [session]);
+  }, [session, profile]);
 
   if (loading) {
     return (
@@ -69,6 +81,9 @@ export function TutorEarnings() {
   });
 
   const stats = Object.values(summaryByCurrency);
+  if (stats.length === 0) {
+    stats.push({ currency: tutorCurrency, gross: 0, net: 0, deducted: 0 });
+  }
 
   return (
     <div className="space-y-8">

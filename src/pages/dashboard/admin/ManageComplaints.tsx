@@ -112,24 +112,25 @@ export function ManageComplaints() {
                 </div>
               </div>
 
-              <div className="md:w-48 flex flex-col gap-2 justify-end border-t md:border-t-0 md:border-l border-slate-100 pt-4 md:pt-0 md:pl-6">
+              <div className="md:w-56 flex flex-col gap-2 justify-center border-t md:border-t-0 md:border-l border-slate-100 pt-4 md:pt-0 md:pl-6">
                 {c.complaint_status === 'open' ? (
                   <>
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1 text-center">Resolution Actions</p>
                     <button
                       onClick={() => resolveComplaint(c.id, 'tutor_favor')}
                       disabled={processingId === c.id}
-                      className="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-bold py-2 px-3 rounded-lg text-xs transition-colors flex items-center justify-center gap-1 disabled:opacity-50"
+                      className="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-bold py-2.5 px-3 rounded-lg text-xs transition-colors flex items-center justify-center gap-1.5 disabled:opacity-50"
                     >
-                      {processingId === c.id ? <Loader2 className="w-3 h-3 animate-spin" /> : <CheckCircle className="w-3 h-3" />}
-                      Resolve for Tutor
+                      {processingId === c.id ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <CheckCircle className="w-3.5 h-3.5" />}
+                      Complaint Resolved (Pay Tutor)
                     </button>
                     <button
                       onClick={() => resolveComplaint(c.id, 'parent_favor')}
                       disabled={processingId === c.id}
-                      className="bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold py-2 px-3 rounded-lg text-xs transition-colors flex items-center justify-center gap-1 disabled:opacity-50"
+                      className="bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold py-2.5 px-3 rounded-lg text-xs transition-colors flex items-center justify-center gap-1.5 disabled:opacity-50"
                     >
-                      {processingId === c.id ? <Loader2 className="w-3 h-3 animate-spin" /> : <XCircle className="w-3 h-3" />}
-                      Resolve for Parent
+                      {processingId === c.id ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <XCircle className="w-3.5 h-3.5" />}
+                      Complaint Resolved (Refund Parent)
                     </button>
                   </>
                 ) : (
