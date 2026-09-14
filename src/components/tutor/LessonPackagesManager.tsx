@@ -344,7 +344,7 @@ export function LessonPackagesManager({ tutorProfile, onCurrencyUpdate }: Lesson
               <button
                 type="submit"
                 disabled={saving}
-                className="px-6 py-2.5 bg-sky-500 text-white font-bold rounded-xl shadow-md hover:bg-sky-600 transition-colors disabled:opacity-50"
+                className="px-6 py-2.5 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 transition-colors disabled:opacity-50"
               >
                 {saving ? 'Saving...' : 'Save Package'}
               </button>
@@ -374,7 +374,7 @@ export function LessonPackagesManager({ tutorProfile, onCurrencyUpdate }: Lesson
           </p>
           <button
             onClick={() => { resetForm(); setShowForm(true); }}
-            className="px-6 py-2.5 bg-sky-500 text-white font-bold rounded-xl shadow-md hover:bg-sky-600 transition-colors"
+            className="px-6 py-2.5 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 transition-colors"
           >
             Add Lesson Package
           </button>
@@ -444,7 +444,7 @@ export function LessonPackagesManager({ tutorProfile, onCurrencyUpdate }: Lesson
             <div className="text-center">
               <button
                 onClick={() => { resetForm(); setShowForm(true); }}
-                className="px-6 py-2.5 bg-slate-900 text-white font-bold rounded-xl shadow-md hover:bg-slate-800 transition-colors"
+                className="px-6 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 transition-colors"
               >
                 + Add More Package
               </button>

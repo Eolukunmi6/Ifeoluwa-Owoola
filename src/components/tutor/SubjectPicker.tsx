@@ -59,7 +59,7 @@ export function SubjectPicker({ selectedSubjectIds, onChange }: SubjectPickerPro
             onClick={() => toggleSubject(subject.id)}
             className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${
               isSelected 
-                ? 'bg-sky-500 text-white shadow-md shadow-sky-500/20 border border-sky-500' 
+                ? 'bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white shadow-md shadow-sky-500/20 border border-sky-500' 
                 : 'bg-white text-slate-600 border border-slate-200 hover:border-slate-300 hover:bg-slate-50'
             }`}
           >

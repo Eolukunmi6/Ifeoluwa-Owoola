@@ -68,7 +68,7 @@ export function TutorCard({ tutor }: TutorCardProps) {
         </div>
         <Link 
           to={`/tutors/${tutor.id}`}
-          className="px-4 py-2 bg-slate-900 text-white text-sm font-bold rounded-lg hover:bg-slate-800 transition-colors shadow-sm"
+          className="px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-bold rounded-lg hover:opacity-90 transition-colors shadow-sm"
         >
           View Profile
         </Link>

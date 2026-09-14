@@ -152,7 +152,7 @@ export function TutorWallet({ onWithdrawalComplete }: { onWithdrawalComplete: ()
               <button
                 type="submit"
                 disabled={withdrawing || !withdrawAmount || Number(withdrawAmount) <= 0 || Number(withdrawAmount) > available}
-                className="bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-black px-4 py-2 rounded-lg transition-colors flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-emerald-500 hover:opacity-90 text-slate-900 font-black px-4 py-2 rounded-lg transition-colors flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {withdrawing ? <Loader2 className="w-4 h-4 animate-spin" /> : confirmingWithdrawal ? 'Yes, Withdraw' : 'Withdraw'}
               </button>

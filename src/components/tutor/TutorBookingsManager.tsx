@@ -197,7 +197,7 @@ export function TutorBookingsManager({ tutorId }: { tutorId: string }) {
                             <button 
                               onClick={() => handleMarkCompleted(booking.id)}
                               disabled={markingId === booking.id}
-                              className="flex-1 bg-emerald-500 hover:bg-emerald-400 text-white font-bold py-1.5 px-2 rounded flex items-center justify-center gap-1 text-xs transition-colors"
+                              className="flex-1 bg-emerald-500 hover:opacity-90 text-white font-bold py-1.5 px-2 rounded flex items-center justify-center gap-1 text-xs transition-colors"
                             >
                               {markingId === booking.id ? <Loader2 className="w-3 h-3 animate-spin" /> : 'Yes, Complete'}
                             </button>
@@ -213,7 +213,7 @@ export function TutorBookingsManager({ tutorId }: { tutorId: string }) {
                       ) : (
                         <button 
                           onClick={() => setConfirmingId(booking.id)}
-                          className="mt-3 w-full bg-emerald-500 hover:bg-emerald-400 text-white font-bold py-2 px-3 rounded-lg flex items-center justify-center gap-2 text-sm transition-colors"
+                          className="mt-3 w-full bg-emerald-500 hover:opacity-90 text-white font-bold py-2 px-3 rounded-lg flex items-center justify-center gap-2 text-sm transition-colors"
                         >
                           <CheckCircle className="w-4 h-4" />
                           Mark as Completed

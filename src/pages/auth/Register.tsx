@@ -198,7 +198,7 @@ export function Register() {
           <button 
             type="submit" 
             disabled={loading}
-            className="w-full bg-sky-500 text-white py-3.5 rounded-xl font-bold hover:bg-sky-600 transition-all shadow-[0_4px_14px_0_rgba(14,165,233,0.39)] disabled:opacity-70 disabled:cursor-not-allowed mt-4"
+            className="w-full bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white py-3.5 rounded-xl font-bold hover:opacity-90 transition-all shadow-[0_4px_14px_0_rgba(14,165,233,0.39)] disabled:opacity-70 disabled:cursor-not-allowed mt-4"
           >
             {loading ? 'Creating Account...' : 'Sign Up'}
           </button>

@@ -80,7 +80,7 @@ export function ManageCurriculum() {
             value={newCountry}
             onChange={e => setNewCountry(e.target.value)}
           />
-          <button onClick={handleAddCountry} className="px-4 py-2 bg-slate-900 text-white rounded-xl font-bold flex items-center gap-2">
+          <button onClick={handleAddCountry} className="px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-xl font-bold flex items-center gap-2">
             <Plus className="w-4 h-4" /> Add
           </button>
         </div>
@@ -126,7 +126,7 @@ export function ManageCurriculum() {
             value={newExamName}
             onChange={e => setNewExamName(e.target.value)}
           />
-          <button onClick={handleAddExam} className="px-4 py-2 bg-slate-900 text-white rounded-xl font-bold flex items-center gap-2">
+          <button onClick={handleAddExam} className="px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-xl font-bold flex items-center gap-2">
             <Plus className="w-4 h-4" /> Add
           </button>
         </div>
@@ -155,7 +155,7 @@ export function ManageCurriculum() {
             value={newSubject}
             onChange={e => setNewSubject(e.target.value)}
           />
-          <button onClick={handleAddSubject} className="px-4 py-2 bg-slate-900 text-white rounded-xl font-bold flex items-center gap-2">
+          <button onClick={handleAddSubject} className="px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-xl font-bold flex items-center gap-2">
             <Plus className="w-4 h-4" /> Add
           </button>
         </div>

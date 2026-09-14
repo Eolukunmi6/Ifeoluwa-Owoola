@@ -135,7 +135,7 @@ export function TutorDashboard() {
             </p>
             <button
               onClick={() => navigate('/dashboard/tutor/profile')}
-              className="px-6 py-3 bg-sky-500 text-white font-bold rounded-xl shadow-md hover:bg-sky-600 transition-colors"
+              className="px-6 py-3 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 transition-colors"
             >
               Set Up Profile
             </button>

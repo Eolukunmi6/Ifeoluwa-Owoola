@@ -199,7 +199,7 @@ export function BookTutor() {
           
           {[1, 2, 3, 4].map(num => (
             <div key={num} className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm transition-colors ${
-              step >= num ? 'bg-sky-500 text-white' : 'bg-slate-200 text-slate-500'
+              step >= num ? 'bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white' : 'bg-slate-200 text-slate-500'
             }`}>
               {num}
             </div>
@@ -230,7 +230,7 @@ export function BookTutor() {
               {children.length === 0 ? (
                 <div className="text-center p-8 bg-slate-50 rounded-2xl border border-slate-200">
                   <p className="text-slate-600 mb-4">You need to add a child to your profile before booking a lesson.</p>
-                  <Link to="/dashboard/parent" className="inline-block px-6 py-3 bg-sky-500 text-white font-bold rounded-xl hover:bg-sky-600 transition-colors">
+                  <Link to="/dashboard/parent" className="inline-block px-6 py-3 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white font-bold rounded-xl hover:opacity-90 transition-colors">
                     Go to Dashboard to Add Child
                   </Link>
                 </div>
@@ -258,7 +258,7 @@ export function BookTutor() {
                     <button 
                       onClick={() => setStep(2)}
                       disabled={!selectedChildId}
-                      className="px-8 py-3 bg-slate-900 text-white font-bold rounded-xl shadow-md hover:bg-slate-800 disabled:opacity-50 transition-colors"
+                      className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 disabled:opacity-50 transition-colors"
                     >
                       Next Step
                     </button>
@@ -308,7 +308,7 @@ export function BookTutor() {
                 <button 
                   onClick={() => setStep(3)}
                   disabled={!selectedPackageId}
-                  className="px-8 py-3 bg-slate-900 text-white font-bold rounded-xl shadow-md hover:bg-slate-800 disabled:opacity-50 transition-colors"
+                  className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 disabled:opacity-50 transition-colors"
                 >
                   Next Step
                 </button>
@@ -353,7 +353,7 @@ export function BookTutor() {
                           onClick={() => setSelectedTime(time)}
                           className={`py-3 px-4 rounded-xl text-sm font-bold transition-all border ${
                             selectedTime === time 
-                              ? 'bg-sky-500 text-white border-sky-500 shadow-md shadow-sky-500/20' 
+                              ? 'bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white border-sky-500 shadow-md shadow-sky-500/20' 
                               : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
                           }`}
                         >
@@ -374,7 +374,7 @@ export function BookTutor() {
                 <button 
                   onClick={() => setStep(4)}
                   disabled={!selectedDate || !selectedTime}
-                  className="px-8 py-3 bg-slate-900 text-white font-bold rounded-xl shadow-md hover:bg-slate-800 disabled:opacity-50 transition-colors"
+                  className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 disabled:opacity-50 transition-colors"
                 >
                   Review Booking
                 </button>
@@ -433,7 +433,7 @@ export function BookTutor() {
                 <button 
                   onClick={handleConfirm}
                   disabled={loading}
-                  className="px-8 py-3 bg-sky-500 text-white font-bold rounded-xl shadow-md hover:bg-sky-600 disabled:opacity-70 transition-colors flex items-center gap-2"
+                  className="px-8 py-3 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 disabled:opacity-70 transition-colors flex items-center gap-2"
                 >
                   {loading ? 'Processing...' : 'Confirm & Proceed to Payment'}
                 </button>

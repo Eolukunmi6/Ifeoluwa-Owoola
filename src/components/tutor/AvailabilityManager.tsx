@@ -219,7 +219,7 @@ export function AvailabilityManager({ tutorId }: AvailabilityManagerProps) {
         <button
           onClick={handleSave}
           disabled={saving}
-          className="px-6 py-2.5 bg-sky-500 text-white font-bold rounded-xl shadow-md hover:bg-sky-600 transition-colors disabled:opacity-50"
+          className="px-6 py-2.5 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 transition-colors disabled:opacity-50"
         >
           {saving ? 'Saving...' : 'Save Availability'}
         </button>

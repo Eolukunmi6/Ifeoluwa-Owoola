@@ -60,7 +60,7 @@ export function TransactionDetailsModal({ tx, onClose }: Props) {
           <div className="mt-8">
             <button
               onClick={onClose}
-              className="w-full py-3 bg-slate-900 text-white font-semibold rounded-xl hover:bg-slate-800 transition-colors"
+              className="w-full py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-xl hover:opacity-90 transition-colors"
             >
               Close
             </button>

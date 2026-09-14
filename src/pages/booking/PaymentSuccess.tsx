@@ -55,7 +55,7 @@ export function PaymentSuccess() {
 
         <Link 
           to="/dashboard/parent"
-          className="w-full py-4 bg-slate-900 text-white font-bold rounded-xl shadow-md hover:bg-slate-800 transition-colors flex items-center justify-center gap-2"
+          className="w-full py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 transition-colors flex items-center justify-center gap-2"
         >
           Go to Dashboard <ArrowRight className="w-5 h-5" />
         </Link>

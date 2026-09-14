@@ -118,7 +118,7 @@ export function PaymentStub() {
             <button
               onClick={handleCheckout}
               disabled={loading}
-              className="w-full py-4 bg-slate-900 text-white font-bold rounded-xl shadow-md hover:bg-slate-800 transition-colors disabled:opacity-70 flex items-center justify-center gap-2"
+              className="w-full py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 transition-colors disabled:opacity-70 flex items-center justify-center gap-2"
             >
               {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : 'Pay Now'}
             </button>

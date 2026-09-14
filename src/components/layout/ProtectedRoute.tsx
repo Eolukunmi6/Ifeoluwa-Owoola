@@ -60,7 +60,7 @@ export function ProtectedRoute({ allowedRoles }: ProtectedRouteProps) {
                </p>
                <button 
                  onClick={() => window.location.href = '/tutor/register'} 
-                 className="w-full px-4 py-3 bg-sky-500 text-white rounded-xl font-bold hover:bg-sky-600 transition-colors shadow-sm"
+                 className="w-full px-4 py-3 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white rounded-xl font-bold hover:opacity-90 transition-colors shadow-sm"
                >
                  Return to Registration
                </button>

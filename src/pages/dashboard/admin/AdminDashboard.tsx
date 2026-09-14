@@ -38,7 +38,7 @@ export function AdminDashboard() {
         </div>
         <button
           onClick={signOut}
-          className="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-slate-800 transition-colors text-sm font-medium text-slate-300 hover:text-white"
+          className="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:opacity-90 transition-colors text-sm font-medium text-slate-300 hover:text-white"
         >
           <LogOut className="w-4 h-4" />
           Sign Out

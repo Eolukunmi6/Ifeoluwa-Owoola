@@ -93,7 +93,7 @@ export function TeachingVideosManager({ tutorId, subjects }: TeachingVideosManag
         {!showForm && (
           <button
             onClick={() => { setEditingVideo(null); setShowForm(true); }}
-            className="px-4 py-2 bg-slate-900 text-white text-sm font-bold rounded-xl shadow-sm hover:bg-slate-800 transition-colors"
+            className="px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-bold rounded-xl shadow-sm hover:opacity-90 transition-colors"
           >
             + Upload Video
           </button>
@@ -129,7 +129,7 @@ export function TeachingVideosManager({ tutorId, subjects }: TeachingVideosManag
           </p>
           <button
             onClick={() => { setEditingVideo(null); setShowForm(true); }}
-            className="px-6 py-2.5 bg-sky-500 text-white font-bold rounded-xl shadow-md hover:bg-sky-600 transition-colors"
+            className="px-6 py-2.5 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 transition-colors"
           >
             Upload Your First Video
           </button>

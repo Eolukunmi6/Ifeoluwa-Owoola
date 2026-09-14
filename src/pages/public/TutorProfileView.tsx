@@ -133,7 +133,7 @@ export function TutorProfileView() {
       <div className="bg-transparent min-h-screen py-20 px-4 text-center flex flex-col items-center">
         <h2 className="text-2xl font-bold text-slate-900 mb-4">Tutor Not Found</h2>
         <p className="text-slate-500 mb-8">{error}</p>
-        <Link to="/tutors" className="px-6 py-3 bg-sky-500 text-white font-bold rounded-xl shadow-md hover:bg-sky-600 transition-colors">
+        <Link to="/tutors" className="px-6 py-3 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 transition-colors">
           Back to Marketplace
         </Link>
       </div>
@@ -193,7 +193,7 @@ export function TutorProfileView() {
                   />
                   <button 
                     onClick={handleBookClick}
-                    className="flex-1 md:flex-none px-8 py-3.5 bg-slate-900 text-white font-bold rounded-xl shadow-md hover:bg-slate-800 transition-colors"
+                    className="flex-1 md:flex-none px-8 py-3.5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold rounded-xl shadow-md hover:opacity-90 transition-colors"
                   >
                     Book This Tutor
                   </button>
@@ -364,7 +364,7 @@ export function TutorProfileView() {
               Create a free parent account to start booking sessions with top educators and managing your child's learning.
             </p>
             <div className="space-y-3">
-              <Link to="/register" className="block w-full py-3.5 bg-sky-500 text-white text-center font-bold rounded-xl shadow-md hover:bg-sky-600 transition-colors">
+              <Link to="/register" className="block w-full py-3.5 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white text-center font-bold rounded-xl shadow-md hover:opacity-90 transition-colors">
                 Create Parent Account
               </Link>
               <Link to="/login" className="block w-full py-3.5 bg-slate-50 text-slate-700 text-center font-bold rounded-xl hover:bg-slate-100 transition-colors border border-slate-200">

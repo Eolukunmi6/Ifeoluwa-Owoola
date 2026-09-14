@@ -373,7 +373,7 @@ export function TutorProfileEdit() {
               <button 
                 type="submit" 
                 disabled={saving}
-                className="w-full md:w-auto px-8 bg-sky-500 text-white py-3.5 rounded-xl font-bold hover:bg-sky-600 transition-all shadow-[0_4px_14px_0_rgba(14,165,233,0.39)] disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full md:w-auto px-8 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white py-3.5 rounded-xl font-bold hover:opacity-90 transition-all shadow-[0_4px_14px_0_rgba(14,165,233,0.39)] disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {saving ? 'Saving Profile...' : 'Save Profile'}
               </button>

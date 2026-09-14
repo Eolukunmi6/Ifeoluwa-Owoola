@@ -92,7 +92,7 @@ export function ManageSettings() {
         <button
           type="submit"
           disabled={saving}
-          className="w-full py-3 bg-sky-500 text-white font-bold rounded-xl hover:bg-sky-600 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+          className="w-full py-3 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white font-bold rounded-xl hover:opacity-90 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
         >
           {saving && <Loader2 className="w-4 h-4 animate-spin" />}
           {saving ? 'Saving...' : 'Save Settings'}

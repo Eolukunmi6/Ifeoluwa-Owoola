@@ -195,7 +195,7 @@ export function TutorRegister() {
           <button 
             type="submit" 
             disabled={loading}
-            className="w-full bg-slate-900 text-white py-3.5 rounded-xl font-bold hover:bg-slate-800 transition-all shadow-md disabled:opacity-70 disabled:cursor-not-allowed mt-4"
+            className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white py-3.5 rounded-xl font-bold hover:opacity-90 transition-all shadow-md disabled:opacity-70 disabled:cursor-not-allowed mt-4"
           >
             {loading ? 'Submitting Application...' : 'Apply Now'}
           </button>
