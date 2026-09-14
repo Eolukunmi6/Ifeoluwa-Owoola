@@ -26,11 +26,12 @@ export function AdminDashboard() {
   ] as const;
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
+    <div className="min-h-screen bg-transparent flex flex-col">
       {/* Top Nav */}
       <div className="bg-slate-900 text-white p-4 flex justify-between items-center sticky top-0 z-50">
         <div className="flex items-center gap-4">
-          <h1 className="text-xl font-bold tracking-tight">EduMatics Admin</h1>
+          <img src="/logo.png" alt="Auralearn Logo" className="h-14 sm:h-16 w-auto object-contain invert hue-rotate-180 mix-blend-screen scale-[1.35] origin-left" />
+          <h1 className="text-xl font-bold tracking-tight hidden sm:block ml-4">Admin</h1>
           <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-sky-500/20 text-sky-300 border border-sky-500/30">
             {profile?.full_name}
           </span>

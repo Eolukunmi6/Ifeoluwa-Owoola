@@ -174,14 +174,14 @@ export function BookTutor() {
   };
 
   if (loading && step === 1) {
-    return <div className="min-h-screen bg-slate-50 flex items-center justify-center">Loading...</div>;
+    return <div className="min-h-screen bg-transparent flex items-center justify-center">Loading...</div>;
   }
 
   const selectedChild = children.find(c => c.id === selectedChildId);
   const selectedPackage = packages.find(p => p.id === selectedPackageId);
 
   return (
-    <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6">
+    <div className="min-h-screen bg-transparent py-12 px-4 sm:px-6">
       <div className="max-w-3xl mx-auto">
         <button onClick={() => navigate(-1)} className="flex items-center text-sm font-bold text-slate-500 hover:text-slate-900 mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4 mr-1" /> Back

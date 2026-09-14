@@ -43,7 +43,7 @@ export function ParentDashboard() {
   // To fix the "stuck loading" issue for new users, we don't rely on complex joined fetches for the initial render
   
   return (
-    <div className="min-h-screen bg-slate-50 py-8 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-transparent py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row gap-8">
           

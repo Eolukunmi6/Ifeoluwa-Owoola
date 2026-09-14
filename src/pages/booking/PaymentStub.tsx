@@ -79,7 +79,7 @@ export function PaymentStub() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 py-20 px-4">
+    <div className="min-h-screen bg-transparent py-20 px-4">
       <div className="max-w-md mx-auto bg-white rounded-2xl shadow-sm border border-slate-200 p-8 text-center">
         <div className="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <CreditCard className="w-8 h-8 text-sky-600" />

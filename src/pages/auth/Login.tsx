@@ -66,11 +66,14 @@ export function Login() {
   };
 
   return (
-    <div className="min-h-[70vh] flex items-center justify-center bg-slate-50 px-4 py-12">
+    <div className="min-h-[70vh] flex items-center justify-center bg-transparent px-4 py-12">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-[0_10px_25px_-5px_rgba(0,0,0,0.1)] border border-slate-200 p-8">
         <div className="text-center mb-8">
+          <div className="flex justify-center mb-6 mt-4">
+            <img src="/logo.png" alt="Auralearn Logo" className="h-28 sm:h-36 w-auto object-contain mix-blend-multiply scale-[1.3] sm:scale-[1.4]" />
+          </div>
           <h2 className="text-[24px] font-extrabold text-slate-900 tracking-tight">Welcome back</h2>
-          <p className="mt-2 text-slate-500 text-[14px]">Log in to your EduMatics account</p>
+          <p className="mt-2 text-slate-500 text-[14px]">Log in to your Auralearn account</p>
         </div>
 
         {error && (

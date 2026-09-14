@@ -75,7 +75,7 @@ export function TutorDashboard() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-50 flex justify-center py-20">
+      <div className="min-h-screen bg-transparent flex justify-center py-20">
         <div className="w-12 h-12 border-4 border-sky-500 border-t-transparent rounded-full animate-spin"></div>
       </div>
     );
@@ -84,7 +84,7 @@ export function TutorDashboard() {
   const isProfileComplete = tutorData?.bio && subjects.length > 0;
 
   return (
-    <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-transparent py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto space-y-6">
         
         {/* Header section */}

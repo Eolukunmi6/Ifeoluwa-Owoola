@@ -229,7 +229,7 @@ export function Home() {
         <div className="max-w-4xl mx-auto px-6 md:px-4 relative text-center z-10">
           <h2 className="text-[28px] sm:text-[36px] md:text-[48px] font-extrabold text-white mb-4 drop-shadow-sm leading-tight">Ready to accelerate learning?</h2>
           <p className="text-white/90 text-[18px] mb-10 max-w-2xl mx-auto">
-            Join thousands of parents who have found the perfect tutor for their children on EduMatics.
+            Join thousands of parents who have found the perfect tutor for their children on Auralearn.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/register" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-400 text-slate-900 font-extrabold hover:opacity-90 transition-all text-[16px] shadow-lg">

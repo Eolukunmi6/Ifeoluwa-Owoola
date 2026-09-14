@@ -4,17 +4,12 @@ import { Link } from 'react-router-dom';
 
 export function Footer() {
   return (
-    <footer className="bg-slate-50 border-t border-slate-200">
+    <footer className="bg-white/80 backdrop-blur-md border-t border-slate-200/50 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-                E
-              </div>
-              <span className="font-extrabold text-[24px] text-sky-500 tracking-[-1px] flex items-center gap-2">
-                EduMatics
-              </span>
+            <div className="flex items-center gap-2 mb-6 mt-2">
+              <img src="/logo.png" alt="Auralearn Logo" className="h-24 sm:h-28 w-auto object-contain mix-blend-multiply grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100 scale-[1.35] sm:scale-150 origin-left" />
             </div>
             <p className="text-slate-500 text-sm leading-relaxed">
               Premium tutor marketplace connecting parents with qualified tutors. Learning made easier.
@@ -46,7 +41,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-slate-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
-          <p>&copy; {new Date().getFullYear()} EduMatics. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Auralearn. All rights reserved.</p>
         </div>
       </div>
     </footer>

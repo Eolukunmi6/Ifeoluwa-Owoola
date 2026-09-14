@@ -37,7 +37,7 @@ export function PaymentSuccess() {
   }, [bookingId]);
 
   return (
-    <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-transparent flex items-center justify-center p-4">
       <div className="bg-white max-w-md w-full rounded-3xl p-8 sm:p-10 text-center shadow-sm border border-slate-200">
         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <CheckCircle className="w-10 h-10 text-green-600" />

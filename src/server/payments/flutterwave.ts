@@ -16,7 +16,7 @@ export async function initializeFlutterwave(bookingId: string, email: string, am
         name: name || 'Customer'
       },
       customizations: {
-        title: "EduMatics Lesson Booking",
+        title: "Auralearn Lesson Booking",
         description: "Payment for tutoring session"
       }
     },

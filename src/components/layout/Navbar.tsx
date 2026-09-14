@@ -15,15 +15,12 @@ export function Navbar() {
   }, [location.pathname]);
 
   return (
-    <nav className="border-b border-slate-200 bg-white sticky top-0 z-50">
+    <nav className="border-b border-slate-200/50 bg-white/80 backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="flex justify-between items-center h-[72px]">
+        <div className="flex justify-between items-center min-h-[88px] py-2">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-              E
-            </div>
-            <Link to="/" className="font-extrabold text-[24px] text-sky-500 tracking-[-1px] flex items-center gap-2">
-              EduMatics
+            <Link to="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
+              <img src="/logo.png" alt="Auralearn Logo" className="h-20 sm:h-24 w-auto object-contain mix-blend-multiply scale-[1.35] sm:scale-150 origin-left" />
             </Link>
           </div>
 

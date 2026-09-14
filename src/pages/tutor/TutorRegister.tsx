@@ -90,7 +90,7 @@ export function TutorRegister() {
   };
 
   return (
-    <div className="min-h-[70vh] flex items-center justify-center bg-slate-50 px-4 py-12">
+    <div className="min-h-[70vh] flex items-center justify-center bg-transparent px-4 py-12">
       <div className="w-full max-w-xl bg-white rounded-2xl shadow-[0_10px_25px_-5px_rgba(0,0,0,0.1)] border border-slate-200 p-8">
         <div className="text-center mb-10">
           <h2 className="text-[32px] font-extrabold text-slate-900 tracking-tight">Apply to be a Tutor</h2>

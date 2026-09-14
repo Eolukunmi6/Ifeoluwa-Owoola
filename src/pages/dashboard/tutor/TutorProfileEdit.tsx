@@ -205,14 +205,14 @@ export function TutorProfileEdit() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-50 flex justify-center py-20">
+      <div className="min-h-screen bg-transparent flex justify-center py-20">
         <div className="w-12 h-12 border-4 border-sky-500 border-t-transparent rounded-full animate-spin"></div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-transparent py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-[0_2px_4px_rgba(0,0,0,0.02)] border border-slate-200 overflow-hidden">
         <div className="px-8 py-6 border-b border-slate-100 flex justify-between items-center">
           <div>

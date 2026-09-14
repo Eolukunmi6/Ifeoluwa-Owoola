@@ -118,7 +118,7 @@ export function TutorProfileView() {
 
   if (loading) {
     return (
-      <div className="bg-slate-50 min-h-screen py-12 px-4 flex justify-center">
+      <div className="bg-transparent min-h-screen py-12 px-4 flex justify-center">
         <div className="animate-pulse space-y-8 w-full max-w-4xl">
           <div className="h-64 bg-slate-200 rounded-3xl w-full"></div>
           <div className="h-32 bg-slate-200 rounded-2xl w-full"></div>
@@ -130,7 +130,7 @@ export function TutorProfileView() {
 
   if (error || !tutor) {
     return (
-      <div className="bg-slate-50 min-h-screen py-20 px-4 text-center flex flex-col items-center">
+      <div className="bg-transparent min-h-screen py-20 px-4 text-center flex flex-col items-center">
         <h2 className="text-2xl font-bold text-slate-900 mb-4">Tutor Not Found</h2>
         <p className="text-slate-500 mb-8">{error}</p>
         <Link to="/tutors" className="px-6 py-3 bg-sky-500 text-white font-bold rounded-xl shadow-md hover:bg-sky-600 transition-colors">
@@ -143,7 +143,7 @@ export function TutorProfileView() {
   const symbol = currencySymbols[tutor.currency] || '$';
 
   return (
-    <div className="bg-slate-50 min-h-screen py-8 md:py-12">
+    <div className="bg-transparent min-h-screen py-8 md:py-12">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Back Link */}
